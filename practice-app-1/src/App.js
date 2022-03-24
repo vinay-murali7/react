@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import ChildComp from './childComponent';
+// import ChildComp from './childComponent';
+// import Events from './events';
+import RefExample from './RefExample';
 import './App.css';
 
 class App extends Component {
@@ -50,11 +52,13 @@ class App extends Component {
     console.log('Render');
     return (
       <div className="App">
-        {this.state.name}
-        <ChildComp name={this.state.name}/>
+        {/* {this.state.name} */}
+        {/* <ChildComp name={this.state.name}/> */}
+        {/* <Events />
         <button onClick={this.handleChange.bind(this)}>
           Updated State
-        </button>
+        </button> */}
+        <RefExample />
       </div>
     );
   }
