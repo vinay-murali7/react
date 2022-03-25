@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 // import ChildComp from './childComponent';
 // import Events from './events';
-import RefExample from './RefExample';
+// import RefExample from './RefExample';
+import ControlledEx from './controlledEx';
+import PropTypes from "prop-types";
 import './App.css';
 
 class App extends Component {
@@ -58,9 +60,17 @@ class App extends Component {
         <button onClick={this.handleChange.bind(this)}>
           Updated State
         </button> */}
-        <RefExample />
+        {/* <RefExample /> */}
+        <ControlledEx />
       </div>
     );
   }
 }
+App.propTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number,
+  data: PropTypes.object.isRequired
+};
 export default App;
+
+
